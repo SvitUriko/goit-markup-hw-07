@@ -1,0 +1,43 @@
+.appeal {
+  display: flex;
+  flex-direction: column;
+  margin-left: 93px;
+}
+.appeal__title {
+  margin-bottom: 20px;
+
+  @include font(null, 14px, 1.15, null);
+  color: $white-color;
+  text-transform: uppercase;
+}
+.send {
+  display: flex;
+  justify-content: space-between;
+}
+.send__input {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  padding-left: 16px;
+
+  background-color: transparent;
+  border: 1px solid $border-send;
+  filter: drop-shadow(0px 4px 4px $box-shadow-btn);
+  border-radius: 4px;
+  color: $white-color;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+    border-color: $border-bottom-color;
+  }
+
+  &::placeholder {
+    color: $placeholder-send-color;
+  }
+}
+
+.send__icon {
+  margin-left: 10px;
+}

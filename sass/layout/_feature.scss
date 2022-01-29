@@ -1,0 +1,30 @@
+.feature__list {
+  display: flex;
+  margin-left: -30px;
+}
+.feature__item {
+  flex-basis: calc(100% / 4 -30px);
+  margin-left: 30px;
+}
+.feature__title {
+  margin-bottom: 10px;
+
+  @include font(null, 14px, 1.15, null);
+
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+.feature__text {
+  @include font(null, 14px, 1.7, null);
+}
+.thumb {
+  display: flex;
+  justify-content: center;
+  background-color: $secondary-bg-color;
+  padding-top: 25px;
+  padding-right: 100px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
